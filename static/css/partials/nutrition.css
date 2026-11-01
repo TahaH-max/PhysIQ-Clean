@@ -1,0 +1,58 @@
+/* Nutrition partial styles */
+
+.nutrition-message {
+  background: rgba(0, 229, 255, 0.10);
+  border-left: 3px solid rgba(0, 229, 255, 0.6);
+  font-style: italic;
+}
+
+.nutrition-targets {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.18), rgba(0, 116, 255, 0.18));
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.nutrition-icon {
+  width: 65px;
+  filter: drop-shadow(0 0 6px #00e5ffa6);
+}
+
+.stat .label {
+  font-size: 0.7rem;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.stat .value {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stat .unit {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.nutrition-day {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 229, 255, 0.14);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.nutrition-day:hover {
+  background: rgba(0, 229, 255, 0.09);
+  border-color: rgba(0, 229, 255, 0.35);
+}
+
+.nutrition-day .nutrition-day-arrow {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.nutrition-day:hover .nutrition-day-arrow {
+  color: #00eaff;
+  transform: translateX(3px);
+}
+

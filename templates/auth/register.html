@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center text-light auth-container">
+    <div class="card glass-card p-4 p-md-5 rounded shadow-lg text-center auth-card" data-bs-theme="dark">
+        <img src="{% static 'img/logo.png' %}" alt="logo">
+
+        <h2 class="fw-medium text-primary mb-3 text-gradient">Create your account</h2>
+
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} py-2 mb-3">{{ message }}</div>
+        {% endfor %}
+
+        <form method="post" action="" class="text-start">
+            {% csrf_token %}
+            {{ register_form.non_field_errors }}
+            {{ register_form.as_p }}
+            <button type="submit" name="register_submit" class="btn btn-primary w-100 fw-semibold">Create Account</button>
+        </form>
+        <div class="small text-light mt-3">
+            Already have an account? <a href="{% url 'auth' %}" class="text-decoration-none">Log in</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

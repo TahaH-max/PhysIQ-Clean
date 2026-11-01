@@ -1,0 +1,18 @@
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(20,20,20,0.9) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  color: #ccc !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+

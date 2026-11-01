@@ -1,0 +1,11 @@
+/* Auth page layout */
+
+.auth-container {
+  min-height: 72vh;
+}
+
+.auth-card {
+  max-width: 420px;
+  width: 100%;
+}
+

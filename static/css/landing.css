@@ -1,0 +1,117 @@
+/* Landing page styles */
+
+.landing-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/static/img/weight_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.landing-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 180, 216, 0.3), rgba(0, 0, 0, 0.85));
+  z-index: 1;
+}
+
+.landing-lead {
+  max-width: 700px;
+}
+
+.landing-icon-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+.landing-feature-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.landing-step-icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover .landing-feature-icon,
+.landing-step-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.9));
+}
+
+.landing-sponsors {
+  color: #ffffff;
+}
+
+.landing-sponsor-logos {
+  margin-top: 1.5rem;
+}
+
+.landing-sponsor-logo {
+  height: 55px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.4));
+  opacity: 0.9;
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+}
+
+.landing-sponsor-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.8));
+  opacity: 1;
+}
+
+.landing-sponsor-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .landing-sponsor-logo {
+    height: 45px;
+  }
+}
+
+/* Subtle animations */
+.animate-fadein {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.animate-fadein.delay-1 { animation-delay: 0.3s; }
+.animate-fadein.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.landing-cta {
+  background: linear-gradient(135deg, #101822, #0a0f1a);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+

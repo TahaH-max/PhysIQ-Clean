@@ -1,0 +1,100 @@
+/* Workout partial styles */
+
+.workout-day {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  transition: 0.25s;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workout-day:hover {
+  background: rgba(0, 229, 255, 0.10);
+  border-color: rgba(0, 229, 255, 0.45);
+}
+
+.workout-day .workout-day-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.workout-day .workout-day-arrow {
+  font-size: 1.2rem;
+  transition: 0.25s;
+  opacity: 0.75;
+}
+
+.workout-day[aria-expanded="true"] .workout-day-arrow {
+  transform: rotate(90deg);
+  opacity: 1;
+  color: #00eaff;
+}
+
+.workout-day-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.65));
+}
+
+.workout-detail {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.workout-exercise-list {
+  list-style: none;
+}
+
+.workout-exercise {
+  padding-left: 12px;
+  border-left: 2px solid rgba(0, 229, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.workout-exercise-name {
+  font-weight: 600;
+}
+
+.workout-rest {
+  background: rgba(0, 229, 255, 0.12);
+  border-left: 3px solid rgba(0, 229, 255, 0.8);
+  border-radius: 0.5rem;
+}
+
+.workout-notes-preview {
+  max-height: 2.5ch;
+  overflow: hidden;
+}
+
+/* Prompt bubbles */
+.workout-prompts {
+  padding: 10px;
+}
+
+.prompt-bubble-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.prompt-bubble {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.prompt-bubble:hover {
+  background-color: rgba(79, 145, 248, 0.3);
+  transform: translateY(-2px);
+}
+

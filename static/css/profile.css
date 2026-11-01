@@ -1,0 +1,72 @@
+/* Profile setup wizard styles */
+
+.profile-goal {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px;
+  border-radius: 12px;
+  width: 32%;
+  transition: 0.25s;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.profile-goal:hover {
+  border-color: #0d6efd;
+}
+
+.profile-goal.selected {
+  border-color: #0d6efd;
+  filter: brightness(1.15);
+}
+
+.profile-goal input[type="radio"] {
+  display: none;
+}
+
+.profile-goal-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Schedule Grid */
+.profile-schedule {
+  display: grid;
+  /* First column is for day labels, followed by six time slots. */
+  grid-template-columns: 80px repeat(6, 1fr);
+  gap: 4px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.profile-schedule .schedule-day {
+  font-weight: 600;
+  text-align: right;
+  padding-right: 6px;
+  line-height: 32px;
+}
+
+.schedule-slot {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  height: 32px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s;
+}
+
+.schedule-slot:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.schedule-slot.busy {
+  /* Selected time blocks from the profile schedule picker. */
+  background: #b21111;
+}
+
+.schedule-time {
+  text-align: center;
+  font-weight: 600;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}
+

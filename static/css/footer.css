@@ -1,0 +1,17 @@
+/* Footer styles */
+
+.footer {
+  background: rgba(15, 15, 20, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+

@@ -1,0 +1,41 @@
+/* Overview partial styles */
+
+.overview-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.65));
+}
+
+.overview-exercise {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.overview-exercise:last-child {
+  border-bottom: 0;
+}
+
+.overview-rest-pill {
+  background: rgba(0, 229, 255, 0.12);
+  border-left: 3px solid rgba(0, 229, 255, 0.8);
+}
+
+.macro-chip {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.85rem;
+}
+
+.meal-mini-row {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.meal-mini-row:last-child {
+  border-bottom: 0;
+}
+

@@ -1,0 +1,34 @@
+/* Shared dashboard partial styles */
+
+.dashboard-banner {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.18), rgba(0, 153, 255, 0.14));
+  border: 1px solid rgba(0, 229, 255, 0.35);
+}
+
+.banner-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.banner-icon-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.65));
+}
+
+.banner-text {
+  font-size: 1.05rem;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  transition: 0.25s;
+}
+
+.dashboard-card:hover {
+  background: rgba(0, 229, 255, 0.10);
+  border-color: rgba(0, 229, 255, 0.45);
+}
+
